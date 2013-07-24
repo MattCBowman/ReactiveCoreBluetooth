@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		633DDB1517A0769E00B5C077 /* ReactiveCoreBluetooth.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 633DDB1317A0769E00B5C077 /* ReactiveCoreBluetooth.podspec */; };
 		633DDB1617A0769E00B5C077 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 633DDB1417A0769E00B5C077 /* README.md */; };
+		633DDB1817A07C3200B5C077 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 633DDB1717A07C3200B5C077 /* LICENSE */; };
 		8148F971179EF6F9005A414E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8148F970179EF6F9005A414E /* CoreBluetooth.framework */; };
 		8148F98917A02184005A414E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F98617A02184005A414E /* AppDelegate.m */; };
 		8148F98A17A02184005A414E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F98817A02184005A414E /* ViewController.m */; };
@@ -32,6 +33,7 @@
 		633DDB0E17A072DA00B5C077 /* ReactiveCoreBluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReactiveCoreBluetooth.h; path = ../ReactiveCoreBluetooth.h; sourceTree = "<group>"; };
 		633DDB1317A0769E00B5C077 /* ReactiveCoreBluetooth.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ReactiveCoreBluetooth.podspec; path = ../ReactiveCoreBluetooth.podspec; sourceTree = "<group>"; };
 		633DDB1417A0769E00B5C077 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		633DDB1717A07C3200B5C077 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8148F970179EF6F9005A414E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		8148F98517A02184005A414E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ReactiveCoreBluetooth/ViewController.h; sourceTree = SOURCE_ROOT; };
 		8148F98617A02184005A414E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactiveCoreBluetooth/AppDelegate.m; sourceTree = SOURCE_ROOT; };
@@ -94,6 +96,7 @@
 				81F90512179EF5A600E90276 /* Products */,
 				633DDB1317A0769E00B5C077 /* ReactiveCoreBluetooth.podspec */,
 				633DDB1417A0769E00B5C077 /* README.md */,
+				633DDB1717A07C3200B5C077 /* LICENSE */,
 				FCFEF8C442014C7F82E8EC0D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				8148F99C17A021F8005A414E /* InfoPlist.strings in Resources */,
 				633DDB1517A0769E00B5C077 /* ReactiveCoreBluetooth.podspec in Resources */,
 				633DDB1617A0769E00B5C077 /* README.md in Resources */,
+				633DDB1817A07C3200B5C077 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
