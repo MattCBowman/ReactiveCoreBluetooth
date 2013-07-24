@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8148F971179EF6F9005A414E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8148F970179EF6F9005A414E /* CoreBluetooth.framework */; };
+		8148F98917A02184005A414E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F98617A02184005A414E /* AppDelegate.m */; };
+		8148F98A17A02184005A414E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F98817A02184005A414E /* ViewController.m */; };
+		8148F98E17A0219E005A414E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8148F98C17A0219E005A414E /* MainStoryboard.storyboard */; };
+		8148F99217A021B9005A414E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F98F17A021B9005A414E /* main.m */; };
+		8148F99317A021B9005A414E /* ReactiveCoreBluetooth-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8148F99117A021B9005A414E /* ReactiveCoreBluetooth-Info.plist */; };
+		8148F99717A021E4005A414E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8148F99417A021E4005A414E /* Default-568h@2x.png */; };
+		8148F99817A021E4005A414E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8148F99517A021E4005A414E /* Default.png */; };
+		8148F99917A021E4005A414E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8148F99617A021E4005A414E /* Default@2x.png */; };
+		8148F99C17A021F8005A414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8148F99A17A021F8005A414E /* InfoPlist.strings */; };
+		8148F9B117A032B0005A414E /* BluetoothLEService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F9AE17A032B0005A414E /* BluetoothLEService.m */; };
+		8148F9B217A032B0005A414E /* CacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F9B017A032B0005A414E /* CacheObject.m */; };
+		81F90515179EF5A600E90276 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F90514179EF5A600E90276 /* UIKit.framework */; };
+		81F90517179EF5A600E90276 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F90516179EF5A600E90276 /* Foundation.framework */; };
+		81F90519179EF5A600E90276 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F90518179EF5A600E90276 /* CoreGraphics.framework */; };
+		88CA746782CE43CEA1DE65BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CF7B80FA1C44E795F2D919 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58CF7B80FA1C44E795F2D919 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8148F970179EF6F9005A414E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		8148F98517A02184005A414E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ReactiveCoreBluetooth/ViewController.h; sourceTree = SOURCE_ROOT; };
+		8148F98617A02184005A414E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactiveCoreBluetooth/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		8148F98717A02184005A414E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactiveCoreBluetooth/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		8148F98817A02184005A414E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ReactiveCoreBluetooth/ViewController.m; sourceTree = SOURCE_ROOT; };
+		8148F98D17A0219E005A414E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = ReactiveCoreBluetooth/en.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		8148F98F17A021B9005A414E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactiveCoreBluetooth/main.m; sourceTree = SOURCE_ROOT; };
+		8148F99017A021B9005A414E /* ReactiveCoreBluetooth-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ReactiveCoreBluetooth-Prefix.pch"; path = "ReactiveCoreBluetooth/ReactiveCoreBluetooth-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		8148F99117A021B9005A414E /* ReactiveCoreBluetooth-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ReactiveCoreBluetooth-Info.plist"; path = "ReactiveCoreBluetooth/ReactiveCoreBluetooth-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8148F99417A021E4005A414E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ReactiveCoreBluetooth/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		8148F99517A021E4005A414E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ReactiveCoreBluetooth/Default.png; sourceTree = SOURCE_ROOT; };
+		8148F99617A021E4005A414E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "ReactiveCoreBluetooth/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		8148F99B17A021F8005A414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ReactiveCoreBluetooth/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		8148F9AD17A032B0005A414E /* BluetoothLEService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothLEService.h; sourceTree = "<group>"; };
+		8148F9AE17A032B0005A414E /* BluetoothLEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothLEService.m; sourceTree = "<group>"; };
+		8148F9AF17A032B0005A414E /* CacheObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheObject.h; sourceTree = "<group>"; };
+		8148F9B017A032B0005A414E /* CacheObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheObject.m; sourceTree = "<group>"; };
+		81F90511179EF5A600E90276 /* ReactiveCoreBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCoreBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F90514179EF5A600E90276 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		81F90516179EF5A600E90276 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		81F90518179EF5A600E90276 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FCFEF8C442014C7F82E8EC0D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81F9050E179EF5A600E90276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8148F971179EF6F9005A414E /* CoreBluetooth.framework in Frameworks */,
+				81F90515179EF5A600E90276 /* UIKit.framework in Frameworks */,
+				81F90517179EF5A600E90276 /* Foundation.framework in Frameworks */,
+				81F90519179EF5A600E90276 /* CoreGraphics.framework in Frameworks */,
+				88CA746782CE43CEA1DE65BB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8148F9AC17A032B0005A414E /* ReactiveCoreBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				8148F9AD17A032B0005A414E /* BluetoothLEService.h */,
+				8148F9AE17A032B0005A414E /* BluetoothLEService.m */,
+				8148F9AF17A032B0005A414E /* CacheObject.h */,
+				8148F9B017A032B0005A414E /* CacheObject.m */,
+			);
+			name = ReactiveCoreBluetooth;
+			path = ../ReactiveCoreBluetooth;
+			sourceTree = "<group>";
+		};
+		81F90508179EF5A600E90276 = {
+			isa = PBXGroup;
+			children = (
+				8148F9AC17A032B0005A414E /* ReactiveCoreBluetooth */,
+				81F9051A179EF5A600E90276 /* SampleApp */,
+				81F90513179EF5A600E90276 /* Frameworks */,
+				81F90512179EF5A600E90276 /* Products */,
+				FCFEF8C442014C7F82E8EC0D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		81F90512179EF5A600E90276 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81F90511179EF5A600E90276 /* ReactiveCoreBluetooth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81F90513179EF5A600E90276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8148F970179EF6F9005A414E /* CoreBluetooth.framework */,
+				81F90514179EF5A600E90276 /* UIKit.framework */,
+				81F90516179EF5A600E90276 /* Foundation.framework */,
+				81F90518179EF5A600E90276 /* CoreGraphics.framework */,
+				58CF7B80FA1C44E795F2D919 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81F9051A179EF5A600E90276 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				8148F98C17A0219E005A414E /* MainStoryboard.storyboard */,
+				8148F98517A02184005A414E /* ViewController.h */,
+				8148F98817A02184005A414E /* ViewController.m */,
+				8148F98617A02184005A414E /* AppDelegate.m */,
+				8148F98717A02184005A414E /* AppDelegate.h */,
+				81F9051B179EF5A600E90276 /* Supporting Files */,
+			);
+			name = SampleApp;
+			path = BluetoothTestApp;
+			sourceTree = "<group>";
+		};
+		81F9051B179EF5A600E90276 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8148F99A17A021F8005A414E /* InfoPlist.strings */,
+				8148F99417A021E4005A414E /* Default-568h@2x.png */,
+				8148F99517A021E4005A414E /* Default.png */,
+				8148F99617A021E4005A414E /* Default@2x.png */,
+				8148F98F17A021B9005A414E /* main.m */,
+				8148F99017A021B9005A414E /* ReactiveCoreBluetooth-Prefix.pch */,
+				8148F99117A021B9005A414E /* ReactiveCoreBluetooth-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81F90510179EF5A600E90276 /* ReactiveCoreBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81F90534179EF5A700E90276 /* Build configuration list for PBXNativeTarget "ReactiveCoreBluetooth" */;
+			buildPhases = (
+				8E07ABEE3CF64BA98A060A7A /* Check Pods Manifest.lock */,
+				81F9050D179EF5A600E90276 /* Sources */,
+				81F9050E179EF5A600E90276 /* Frameworks */,
+				81F9050F179EF5A600E90276 /* Resources */,
+				A5E922AE3AA346AE85348924 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveCoreBluetooth;
+			productName = BluetoothTestApp;
+			productReference = 81F90511179EF5A600E90276 /* ReactiveCoreBluetooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81F90509179EF5A600E90276 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Citrrus, LLC";
+			};
+			buildConfigurationList = 81F9050C179EF5A600E90276 /* Build configuration list for PBXProject "ReactiveCoreBluetooth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 81F90508179EF5A600E90276;
+			productRefGroup = 81F90512179EF5A600E90276 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81F90510179EF5A600E90276 /* ReactiveCoreBluetooth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81F9050F179EF5A600E90276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8148F98E17A0219E005A414E /* MainStoryboard.storyboard in Resources */,
+				8148F99317A021B9005A414E /* ReactiveCoreBluetooth-Info.plist in Resources */,
+				8148F99717A021E4005A414E /* Default-568h@2x.png in Resources */,
+				8148F99817A021E4005A414E /* Default.png in Resources */,
+				8148F99917A021E4005A414E /* Default@2x.png in Resources */,
+				8148F99C17A021F8005A414E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E07ABEE3CF64BA98A060A7A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5E922AE3AA346AE85348924 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81F9050D179EF5A600E90276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8148F98917A02184005A414E /* AppDelegate.m in Sources */,
+				8148F98A17A02184005A414E /* ViewController.m in Sources */,
+				8148F99217A021B9005A414E /* main.m in Sources */,
+				8148F9B117A032B0005A414E /* BluetoothLEService.m in Sources */,
+				8148F9B217A032B0005A414E /* CacheObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8148F98C17A0219E005A414E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8148F98D17A0219E005A414E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		8148F99A17A021F8005A414E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8148F99B17A021F8005A414E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81F90532179EF5A700E90276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../ReactiveCoreBluetooth;
+				"HEADER_SEARCH_PATHS[arch=*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		81F90533179EF5A700E90276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../ReactiveCoreBluetooth;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81F90535179EF5A700E90276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFEF8C442014C7F82E8EC0D /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReactiveCoreBluetooth/ReactiveCoreBluetooth-Prefix.pch";
+				INFOPLIST_FILE = "ReactiveCoreBluetooth/ReactiveCoreBluetooth-Info.plist";
+				PRODUCT_NAME = ReactiveCoreBluetooth;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		81F90536179EF5A700E90276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFEF8C442014C7F82E8EC0D /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReactiveCoreBluetooth/ReactiveCoreBluetooth-Prefix.pch";
+				INFOPLIST_FILE = "ReactiveCoreBluetooth/ReactiveCoreBluetooth-Info.plist";
+				PRODUCT_NAME = ReactiveCoreBluetooth;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81F9050C179EF5A600E90276 /* Build configuration list for PBXProject "ReactiveCoreBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F90532179EF5A700E90276 /* Debug */,
+				81F90533179EF5A700E90276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81F90534179EF5A700E90276 /* Build configuration list for PBXNativeTarget "ReactiveCoreBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F90535179EF5A700E90276 /* Debug */,
+				81F90536179EF5A700E90276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81F90509179EF5A600E90276 /* Project object */;
+}
