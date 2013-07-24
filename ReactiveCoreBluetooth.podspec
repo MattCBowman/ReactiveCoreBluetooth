@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author      = {
   'Matt Bowman'               => 'matt@citrrus.com',
   }
-  s.source                = { :git => 'https://github.com/MattCBowman/ReactiveCoreBluetooth.git', :tag => 'v0.0.2' }
+  s.source                = { :git => 'https://github.com/MattCBowman/ReactiveCoreBluetooth.git', :tag => '0.0.2' }
   s.platform              = :ios
   s.ios.deployment_target = '5.0'
   s.source_files          = 'ReactiveCoreBluetooth.h', 'ReactiveCoreBluetooth/*.{h,m}'
