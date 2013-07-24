@@ -4,6 +4,8 @@ ReactiveCoreBluetooth is a library that wraps Apple's [CoreBluetooth](http://dev
 
 ## Code Example
 
+    #import "ReactiveCoreBluetooth.h"
+
 	@property (nonatomic) BluetoothLEService* bluetoothLEService;
 
     -(void) viewDidLoad
