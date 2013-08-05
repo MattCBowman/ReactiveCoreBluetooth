@@ -1,5 +1,7 @@
 ## Synopsis
 
+**_NOTE:_** Apple's CoreBluetooth library, which this project uses, only supports Bluetooth LE 4.0+. We're hoping to get future updates that support other versions of Bluetooth.
+
 ReactiveCoreBluetooth is a library that wraps Apple's [CoreBluetooth](http://developer.apple.com/library/ios/#documentation/CoreBluetooth/Reference/CoreBluetooth_Framework/_index.html) framework by providing [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) signals instead of delegates. This library is currently a work-in-progress that provides basic Bluetooth LE device management. There is a sample app included in this repo that shows how to make use of this wrapper.
 
 ## Code Example
