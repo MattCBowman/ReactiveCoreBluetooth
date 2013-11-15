@@ -20,6 +20,8 @@
 @property (nonatomic) NSTimeInterval cacheDurationForDevices;
 @property (nonatomic) NSTimeInterval cachePollingInterval;
 
+@property (nonatomic) BOOL connectOnDiscovery;
+
 -(void) stopScanningForDevices;
 -(void) scanForAvailableDevices;
 -(void) scanForAvailableDevicesWithServices:(NSArray *)serviceUUIDs;
