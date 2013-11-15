@@ -21,7 +21,7 @@
 
 @property (nonatomic) CBCentralManager*     cbManager;
 @property (atomic) NSMutableArray*          pendingDevices;
-@property (atomic) NSMutableArray*          connectedDevices;
+@property (atomic) NSMutableArray*          availableDevices;
 @property (nonatomic) RACSignal*            expireKnownDevicesSignal;
 
 @end
@@ -43,10 +43,11 @@
     if (self)
     {
         self.pendingDevices =           [[NSMutableArray alloc] init];
-        self.connectedDevices =         [[NSMutableArray alloc] init];
+        self.availableDevices =         [[NSMutableArray alloc] init];
         self.cbManager =                [[CBCentralManager alloc] initWithDelegate:self queue:nil];
         self.cacheDurationForDevices =  5;
         self.cachePollingInterval =     3;
+        self.connectOnDiscovery =       YES;
 
         [self initializeSignals];
     }
@@ -115,7 +116,7 @@
         devicesToKeep = [[NSMutableArray alloc] init];
         BOOL devicesDisconnected = NO;
         
-        for (CacheObject* obj in self.connectedDevices)
+        for (CacheObject* obj in self.availableDevices)
         {
             CBPeripheral* p = (CBPeripheral*)obj.object;
             if (p.isConnected)
@@ -130,7 +131,7 @@
         
         if (devicesDisconnected)
         {
-            self.connectedDevices = devicesToKeep;
+            self.availableDevices = devicesToKeep;
             [_availableDevicesSignal sendNext:[self devices]];
         }
     }];
@@ -139,7 +140,7 @@
 -(NSArray*) devices
 {
     NSMutableArray* devices = [[NSMutableArray alloc] init];
-    for (CacheObject *obj in self.connectedDevices)
+    for (CacheObject *obj in self.availableDevices)
     {
         [devices addObject:obj.object];
     }
@@ -147,9 +148,9 @@
     return [NSArray arrayWithArray:devices];
 }
 
--(CacheObject*) isDeviceConnected:(CBPeripheral*) peripheral
+-(CacheObject*) isDeviceAvailable:(CBPeripheral*) peripheral
 {
-    return [self isPeripheral:peripheral inArray:self.connectedDevices];
+    return [self isPeripheral:peripheral inArray:self.availableDevices];
 }
 
 -(CacheObject*) isDevicePendingConnection:(CBPeripheral*)peripheral
@@ -184,18 +185,25 @@
     if (peripheral)
     {
         CacheObject* pendingPeripheral = [self isDevicePendingConnection:peripheral];
-        CacheObject* connectedPeripheral = [self isDeviceConnected:peripheral];
-        if (!connectedPeripheral)
+        CacheObject* availablePeripheral = [self isDeviceAvailable:peripheral];
+        
+        if (!availablePeripheral)
         {
             if (pendingPeripheral)
             {
                 pendingPeripheral.expirationDate = [NSDate dateWithTimeIntervalSinceNow:self.cacheDurationForDevices];
             }
-            else
+            else if(self.connectOnDiscovery)
             {
                 CacheObject *obj = [[CacheObject alloc] initWithObject:peripheral andLifespan:self.cacheDurationForDevices];
                 [self.pendingDevices addObject:obj];
                 [self.cbManager connectPeripheral:peripheral options:nil];
+            }
+            else
+            {
+                CacheObject *obj = [[CacheObject alloc] initWithObject:peripheral andLifespan:self.cacheDurationForDevices];
+                [self.availableDevices addObject:obj];
+                [_availableDevicesSignal sendNext:[self devices]];
             }
         }
     }
@@ -207,7 +215,7 @@
     if (peripheral && peripheral.name)
     {
         CacheObject* pendingPeripheral = [self isDevicePendingConnection:peripheral];
-        CacheObject* connectedPeripheral = [self isDeviceConnected:peripheral];
+        CacheObject* connectedPeripheral = [self isDeviceAvailable:peripheral];
 
         if (pendingPeripheral)
         {
@@ -221,7 +229,7 @@
         else
         {
             CacheObject *obj = [[CacheObject alloc] initWithObject:peripheral andLifespan:self.cacheDurationForDevices];
-            [self.connectedDevices addObject:obj];
+            [self.availableDevices addObject:obj];
             [_availableDevicesSignal sendNext:[self devices]];
         }
     }
@@ -233,7 +241,7 @@
     if (peripheral && peripheral.name)
     {
         CacheObject* pendingPeripheral = [self isDevicePendingConnection:peripheral];
-        CacheObject* connectedPeripheral = [self isDeviceConnected:peripheral];
+        CacheObject* connectedPeripheral = [self isDeviceAvailable:peripheral];
         
         if (pendingPeripheral)
         {
@@ -242,7 +250,7 @@
         
         if (connectedPeripheral)
         {
-            [self.connectedDevices removeObject:connectedPeripheral];
+            [self.availableDevices removeObject:connectedPeripheral];
             [_availableDevicesSignal sendNext:[self devices]];
         }
     }
@@ -253,7 +261,7 @@
     if (peripheral && peripheral.name)
     {
         CacheObject* pendingPeripheral = [self isDevicePendingConnection:peripheral];
-        CacheObject* connectedPeripheral = [self isDeviceConnected:peripheral];
+        CacheObject* connectedPeripheral = [self isDeviceAvailable:peripheral];
         
         if (pendingPeripheral)
         {
@@ -262,7 +270,7 @@
         
         if (connectedPeripheral)
         {
-            [self.connectedDevices removeObject:connectedPeripheral];
+            [self.availableDevices removeObject:connectedPeripheral];
             [_availableDevicesSignal sendNext:[self devices]];
         }
     }

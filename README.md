@@ -109,6 +109,10 @@ The `cacheDurationForDevices` setting allows you to change how long to wait whil
 
 The `cachePollingInterval` setting allows you to change how frequently the cache is polled for expired devices. The default is 3 seconds.
 
+### Connect on Discovery
+
+The `connectOnDiscovery` setting allows you to specify whether you want to connect to the device before it is added to the available devices signal.  Some BLE devices need a connection to provide a name, while others might behave differently or cease advertising themselves once a connection is initiated.
+
 ## Contributors
 
 Matt Bowman (matt at citrrus dot com)
