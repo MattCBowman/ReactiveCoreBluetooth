@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.source_files          = 'ReactiveCoreBluetooth.h', 'ReactiveCoreBluetooth/*.{h,m}'
   s.framework             = 'CoreBluetooth'
   s.requires_arc          = true
-  s.dependency            'ReactiveCocoa', '~> 1.0'
+  s.dependency            'ReactiveCocoa'
 end
