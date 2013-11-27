@@ -8,7 +8,6 @@
 
 #import "BluetoothLEService.h"
 #import "CacheObject.h"
-#import <libextobjc/EXTScope.h>
 
 @interface BluetoothLEService()
 {
@@ -90,9 +89,7 @@
     _peripheralDisconnectedSignal = [RACSubject subject];
     self.expireKnownDevicesSignal = [[RACSignal interval:self.cachePollingInterval] deliverOn:[RACScheduler mainThreadScheduler]];
     
-    @weakify(self)
     [self.expireKnownDevicesSignal subscribeNext:^(id x) {
-        @strongify(self)
         NSMutableArray *devicesToKeep = [[NSMutableArray alloc] init];
         BOOL devicesExpired = NO;
         
