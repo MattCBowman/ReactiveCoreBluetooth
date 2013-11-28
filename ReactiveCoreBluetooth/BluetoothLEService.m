@@ -76,6 +76,9 @@
                                            options:options];
 }
 
+-(void) connectDevice:(CBPeripheral *)device {
+    [self.cbManager connectPeripheral:device options:nil];
+}
 
 #pragma mark -
 #pragma mark Internal Helper Methods
