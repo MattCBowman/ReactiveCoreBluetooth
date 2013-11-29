@@ -7,4 +7,5 @@
 //
 
 #import "BluetoothLEService.h"
+#import "BluetoothLEPeripheral.h"
 #import "CacheObject.h"
