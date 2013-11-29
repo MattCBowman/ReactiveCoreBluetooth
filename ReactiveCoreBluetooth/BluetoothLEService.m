@@ -90,7 +90,8 @@
     _scanningForDevicesSignal =     [RACSubject subject];
     _peripheralConnectedSignal =    [RACSubject subject];
     _peripheralDisconnectedSignal = [RACSubject subject];
-    self.expireKnownDevicesSignal = [[RACSignal interval:self.cachePollingInterval] deliverOn:[RACScheduler mainThreadScheduler]];
+    self.expireKnownDevicesSignal = [RACSignal interval:self.cachePollingInterval
+                                            onScheduler:[RACScheduler mainThreadScheduler]];
     
     [self.expireKnownDevicesSignal subscribeNext:^(id x) {
         NSMutableArray *devicesToKeep = [[NSMutableArray alloc] init];
