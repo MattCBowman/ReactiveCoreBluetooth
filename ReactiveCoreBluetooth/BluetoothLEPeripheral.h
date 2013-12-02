@@ -13,9 +13,10 @@
 
 @interface BluetoothLEPeripheral : NSObject <CBPeripheralDelegate>
 
-@property (nonatomic) RACSubject* discoveredServicesSignal;
-@property (nonatomic) RACSubject* discoveredCharacteristicsSignal;
-@property (nonatomic) RACSubject* wroteValueSignal;
+@property (nonatomic, strong) RACSubject* discoveredServicesSignal;
+@property (nonatomic, strong) RACSubject* discoveredCharacteristicsSignal;
+@property (nonatomic, strong) RACSubject* wroteValueSignal;
+@property (nonatomic, strong) RACSubject* updatedValueSignal;
 
 @property (nonatomic, strong) CBPeripheral* device;
 

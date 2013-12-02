@@ -11,6 +11,7 @@
 - (id)initWithPeripheral:(CBPeripheral *)peripheral {
     self = [super init];
     if (self) {
+        peripheral.delegate = self;
         _device = peripheral;
         [self setupSignals];
     }
@@ -18,13 +19,14 @@
 }
 
 - (CBPeripheralState)state {
-    return _device.state;
+    return self.device.state;
 }
 
 - (void)setupSignals {
     _discoveredServicesSignal           = [RACSubject subject];
     _discoveredCharacteristicsSignal    = [RACSubject subject];
     _wroteValueSignal                   = [RACSubject subject];
+    _updatedValueSignal                 = [RACSubject subject];
 }
 
 #pragma mark - CBperipheral delegate
@@ -35,7 +37,6 @@
     } else {
         [_discoveredServicesSignal sendNext:peripheral];
     }
-
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error {
@@ -54,6 +55,15 @@
         [_wroteValueSignal sendNext:characteristic];
     }
 
+}
+
+- (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
+    
+    if (error) {
+        [_updatedValueSignal sendError:error];
+    } else {
+        [_updatedValueSignal sendNext:characteristic];
+    }
 }
 
 @end
