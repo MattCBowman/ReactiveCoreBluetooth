@@ -19,7 +19,7 @@
 }
 
 - (CBPeripheralState)state {
-    return self.device.state;
+    return _device.state;
 }
 
 - (void)setupSignals {
