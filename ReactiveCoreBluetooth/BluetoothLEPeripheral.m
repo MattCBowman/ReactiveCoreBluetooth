@@ -1,3 +1,10 @@
+//
+//  BluetoothLEPeripheral.m
+//  ReactiveCoreBluetooth
+//
+//  Created by Linlinqi on 13-11-19.
+//  Copyright (c) 2013年 Linlinqi Studio. All rights reserved.
+//
 
 #import "BluetoothLEPeripheral.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
@@ -48,17 +55,14 @@
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-
     if (error) {
         [_wroteValueSignal sendError:error];
     } else {
         [_wroteValueSignal sendNext:characteristic];
     }
-
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-    
     if (error) {
         [_updatedValueSignal sendError:error];
     } else {

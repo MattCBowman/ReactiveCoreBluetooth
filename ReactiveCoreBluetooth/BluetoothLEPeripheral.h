@@ -1,9 +1,9 @@
 //
-//  BluetoothPeripheral.h
-//  Bluetooth Test App
+//  BluetoothLEPeripheral.h
+//  ReactiveCoreBluetooth
 //
-//  Created by Volca on 11/29/13.
-//  Copyright (c) 2013 Volca All rights reserved.
+//  Created by Linlinqi on 13-11-19.
+//  Copyright (c) 2013年 Linlinqi Studio. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
