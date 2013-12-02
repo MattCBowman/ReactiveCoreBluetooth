@@ -25,7 +25,8 @@
 -(void) stopScanningForDevices;
 -(void) scanForAvailableDevices;
 -(void) scanForAvailableDevicesWithServices:(NSArray *)serviceUUIDs;
--(void) connectDevice:(CBPeripheral *)device; 
+-(void) connectDevice:(CBPeripheral *)device;
+-(void) disconnectDevice:(CBPeripheral *)device;
 
 @end
 

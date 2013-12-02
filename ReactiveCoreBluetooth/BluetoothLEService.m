@@ -80,6 +80,10 @@
     [self.cbManager connectPeripheral:device options:nil];
 }
 
+-(void) disconnectDevice:(CBPeripheral *)device {
+    [self.cbManager cancelPeripheralConnection:device];
+}
+
 #pragma mark -
 #pragma mark Internal Helper Methods
 
