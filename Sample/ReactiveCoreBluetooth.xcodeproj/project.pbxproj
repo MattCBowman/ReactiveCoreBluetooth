@@ -15,13 +15,13 @@
 		8148F98A17A02184005A414E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F98817A02184005A414E /* ViewController.m */; };
 		8148F98E17A0219E005A414E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8148F98C17A0219E005A414E /* MainStoryboard.storyboard */; };
 		8148F99217A021B9005A414E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F98F17A021B9005A414E /* main.m */; };
-		8148F99317A021B9005A414E /* ReactiveCoreBluetooth-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8148F99117A021B9005A414E /* ReactiveCoreBluetooth-Info.plist */; };
 		8148F99717A021E4005A414E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8148F99417A021E4005A414E /* Default-568h@2x.png */; };
 		8148F99817A021E4005A414E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8148F99517A021E4005A414E /* Default.png */; };
 		8148F99917A021E4005A414E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8148F99617A021E4005A414E /* Default@2x.png */; };
 		8148F99C17A021F8005A414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8148F99A17A021F8005A414E /* InfoPlist.strings */; };
-		8148F9B117A032B0005A414E /* BluetoothLEService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F9AE17A032B0005A414E /* BluetoothLEService.m */; };
-		8148F9B217A032B0005A414E /* CacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148F9B017A032B0005A414E /* CacheObject.m */; };
+		81900303187705D800350A0A /* BluetoothLEPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 819002FE187705D800350A0A /* BluetoothLEPeripheral.m */; };
+		81900304187705D800350A0A /* BluetoothLEService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81900300187705D800350A0A /* BluetoothLEService.m */; };
+		81900305187705D800350A0A /* CacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 81900302187705D800350A0A /* CacheObject.m */; };
 		81F90515179EF5A600E90276 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F90514179EF5A600E90276 /* UIKit.framework */; };
 		81F90517179EF5A600E90276 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F90516179EF5A600E90276 /* Foundation.framework */; };
 		81F90519179EF5A600E90276 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F90518179EF5A600E90276 /* CoreGraphics.framework */; };
@@ -30,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		58CF7B80FA1C44E795F2D919 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		633DDB0E17A072DA00B5C077 /* ReactiveCoreBluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReactiveCoreBluetooth.h; path = ../ReactiveCoreBluetooth.h; sourceTree = "<group>"; };
 		633DDB1317A0769E00B5C077 /* ReactiveCoreBluetooth.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ReactiveCoreBluetooth.podspec; path = ../ReactiveCoreBluetooth.podspec; sourceTree = "<group>"; };
 		633DDB1417A0769E00B5C077 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		633DDB1717A07C3200B5C077 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -47,10 +46,13 @@
 		8148F99517A021E4005A414E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ReactiveCoreBluetooth/Default.png; sourceTree = SOURCE_ROOT; };
 		8148F99617A021E4005A414E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "ReactiveCoreBluetooth/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		8148F99B17A021F8005A414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ReactiveCoreBluetooth/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
-		8148F9AD17A032B0005A414E /* BluetoothLEService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothLEService.h; sourceTree = "<group>"; };
-		8148F9AE17A032B0005A414E /* BluetoothLEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothLEService.m; sourceTree = "<group>"; };
-		8148F9AF17A032B0005A414E /* CacheObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheObject.h; sourceTree = "<group>"; };
-		8148F9B017A032B0005A414E /* CacheObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheObject.m; sourceTree = "<group>"; };
+		819002FD187705D800350A0A /* BluetoothLEPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothLEPeripheral.h; sourceTree = "<group>"; };
+		819002FE187705D800350A0A /* BluetoothLEPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothLEPeripheral.m; sourceTree = "<group>"; };
+		819002FF187705D800350A0A /* BluetoothLEService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothLEService.h; sourceTree = "<group>"; };
+		81900300187705D800350A0A /* BluetoothLEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothLEService.m; sourceTree = "<group>"; };
+		81900301187705D800350A0A /* CacheObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheObject.h; sourceTree = "<group>"; };
+		81900302187705D800350A0A /* CacheObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheObject.m; sourceTree = "<group>"; };
+		819003061877062500350A0A /* ReactiveCoreBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCoreBluetooth.h; sourceTree = "<group>"; };
 		81F90511179EF5A600E90276 /* ReactiveCoreBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCoreBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F90514179EF5A600E90276 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81F90516179EF5A600E90276 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,14 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8148F9AC17A032B0005A414E /* ReactiveCoreBluetooth */ = {
+		819002FC187705D800350A0A /* ReactiveCoreBluetooth */ = {
 			isa = PBXGroup;
 			children = (
-				8148F9AD17A032B0005A414E /* BluetoothLEService.h */,
-				8148F9AE17A032B0005A414E /* BluetoothLEService.m */,
-				8148F9AF17A032B0005A414E /* CacheObject.h */,
-				8148F9B017A032B0005A414E /* CacheObject.m */,
-				633DDB0E17A072DA00B5C077 /* ReactiveCoreBluetooth.h */,
+				819003061877062500350A0A /* ReactiveCoreBluetooth.h */,
+				819002FD187705D800350A0A /* BluetoothLEPeripheral.h */,
+				819002FE187705D800350A0A /* BluetoothLEPeripheral.m */,
+				819002FF187705D800350A0A /* BluetoothLEService.h */,
+				81900300187705D800350A0A /* BluetoothLEService.m */,
+				81900301187705D800350A0A /* CacheObject.h */,
+				81900302187705D800350A0A /* CacheObject.m */,
 			);
 			name = ReactiveCoreBluetooth;
 			path = ../ReactiveCoreBluetooth;
@@ -90,7 +94,7 @@
 		81F90508179EF5A600E90276 = {
 			isa = PBXGroup;
 			children = (
-				8148F9AC17A032B0005A414E /* ReactiveCoreBluetooth */,
+				819002FC187705D800350A0A /* ReactiveCoreBluetooth */,
 				81F9051A179EF5A600E90276 /* SampleApp */,
 				81F90513179EF5A600E90276 /* Frameworks */,
 				81F90512179EF5A600E90276 /* Products */,
@@ -203,7 +207,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8148F98E17A0219E005A414E /* MainStoryboard.storyboard in Resources */,
-				8148F99317A021B9005A414E /* ReactiveCoreBluetooth-Info.plist in Resources */,
 				8148F99717A021E4005A414E /* Default-568h@2x.png in Resources */,
 				8148F99817A021E4005A414E /* Default.png in Resources */,
 				8148F99917A021E4005A414E /* Default@2x.png in Resources */,
@@ -255,10 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8148F98917A02184005A414E /* AppDelegate.m in Sources */,
+				81900303187705D800350A0A /* BluetoothLEPeripheral.m in Sources */,
+				81900304187705D800350A0A /* BluetoothLEService.m in Sources */,
 				8148F98A17A02184005A414E /* ViewController.m in Sources */,
 				8148F99217A021B9005A414E /* main.m in Sources */,
-				8148F9B117A032B0005A414E /* BluetoothLEService.m in Sources */,
-				8148F9B217A032B0005A414E /* CacheObject.m in Sources */,
+				81900305187705D800350A0A /* CacheObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
